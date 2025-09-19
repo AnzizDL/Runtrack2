@@ -1,2 +1,2 @@
 <?php 
-echo 'hello anziz';
+echo 'Hello LaPlateforme';

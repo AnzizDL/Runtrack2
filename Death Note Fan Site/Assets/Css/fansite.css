@@ -1,0 +1,657 @@
+/* ===================================================================
+   FANSITE DEATH NOTE - FICHIER CSS PRINCIPAL
+   ================================================================== */
+
+/* ===================================================================
+   RESET ET STYLES DE BASE - DEATH NOTE FAN SITE
+   ================================================================== */
+
+/* Reset universel : supprime les marges et paddings par défaut de tous les éléments */
+* {
+  margin: 0; /* Supprime toutes les marges par défaut */
+  padding: 0; /* Supprime tous les paddings par défaut */
+  box-sizing: border-box; /* Inclut padding et border dans la largeur totale */
+}
+
+/* Style principal du corps de la page */
+body {
+  font-family: "Arial", sans-serif; /* Police principale du site */
+  background-color: #1a1a1a; /* Fond noir foncé pour le thème Death Note */
+  color: #e0e0e0; /* Couleur de texte gris clair pour contraste */
+  line-height: 1.6; /* Espacement des lignes pour lisibilité */
+  margin: 0; /* Supprime marge du body */
+  min-height: 100vh; /* Hauteur minimale de l'écran */
+  display: flex; /* Flexbox pour layout */
+  flex-direction: column; /* Direction verticale */
+}
+
+/* ===================================================================
+   HEADER ET NAVIGATION PRINCIPALE
+   ================================================================== */
+
+/* Conteneur principal du header (logo + navigation) */
+header {
+  background-color: #000; /* Fond noir pur */
+  padding: 1rem 0; /* Espacement vertical interne (haut/bas) */
+  box-shadow: 0 2px 10px rgba(255, 0, 0, 0.3); /* Ombre rouge sous le header */
+  border-bottom: 2px solid #8b0000; /* Bordure rouge foncé en bas */
+}
+
+/* Logo Death Note dans le header */
+.logo {
+  display: block; /* Affichage en bloc pour centrage */
+  max-width: 300px; /* Largeur maximale du logo */
+  height: auto; /* Hauteur automatique pour garder proportions */
+  margin: 0 auto 1rem; /* Centré horizontalement + marge en bas */
+  filter: drop-shadow(
+    2px 2px 4px rgba(255, 0, 0, 0.5)
+  ); /* Ombre rouge sur le logo */
+}
+
+/* Titre texte caché (remplacé par le logo) */
+header h1 {
+  display: none; /* Cache complètement le titre texte */
+}
+
+/* ===================================================================
+   MENU DE NAVIGATION (HEADER ET FOOTER)
+   ================================================================== */
+
+/* Liste des liens de navigation */
+nav ul {
+  list-style: none; /* Supprime les puces de liste */
+  display: flex; /* Affichage horizontal flexbox */
+  justify-content: center; /* Centré horizontalement */
+  gap: 2rem; /* Espacement de 2rem entre les liens */
+  flex-wrap: wrap; /* Passage à la ligne sur petits écrans */
+}
+
+/* Éléments individuels de la liste */
+nav li {
+  display: inline; /* Affichage en ligne */
+}
+
+/* Style des liens de navigation */
+nav a {
+  color: #e0e0e0; /* Couleur gris clair */
+  text-decoration: none; /* Supprime le soulignement */
+  padding: 0.8rem 1.5rem; /* Espacement interne (vertical horizontal) */
+  border-radius: 5px; /* Coins arrondis */
+  transition: all 0.3s ease; /* Animation fluide pour tous les effets */
+  font-weight: bold; /* Texte en gras */
+  text-transform: uppercase; /* Conversion en majuscules */
+  letter-spacing: 1px; /* Espacement entre les lettres */
+}
+
+/* Effet au survol des liens */
+nav a:hover {
+  background-color: #8b0000; /* Fond rouge foncé au survol */
+  color: #fff; /* Texte blanc au survol */
+  transform: translateY(-2px); /* Légère élévation de 2px */
+  box-shadow: 0 4px 8px rgba(255, 0, 0, 0.3); /* Ombre rouge */
+}
+
+/* Style pour la page active (page courante) */
+nav a.active {
+  background-color: #ff0000; /* Fond rouge vif pour page active */
+  color: #fff; /* Texte blanc */
+  box-shadow: 0 2px 8px rgba(255, 0, 0, 0.6); /* Ombre rouge plus prononcée */
+}
+
+/* ===================================================================
+   CONTENU PRINCIPAL DES PAGES
+   ================================================================== */
+
+/* Conteneur principal du contenu des pages */
+main {
+  max-width: 1200px; /* Largeur maximale du contenu */
+  margin: 0 auto; /* Centré horizontalement avec marges automatiques */
+  padding: 2rem; /* Espacement interne de 2rem */
+  flex: 1; /* Prend l'espace disponible (pour footer en bas) */
+}
+
+/* Titres principaux des pages (h1) */
+h1 {
+  text-align: center; /* Centré */
+  color: #fff; /* Blanc pur pour contraste */
+  margin: 2rem 0; /* Marges verticales de 2rem */
+  font-size: 2rem; /* Taille de police */
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.7); /* Ombre noire pour contraste */
+}
+
+/* Sous-titres de sections */
+h2 {
+  color: #ff6666; /* Rouge clair */
+  margin: 1.5rem 0 1rem 0; /* Marges spécifiques */
+  font-size: 1.5rem; /* Taille intermédiaire */
+}
+
+/* ===================================================================
+   IMAGE D'ACCUEIL (LOGO BLANC AVEC EFFETS)
+   ================================================================== */
+
+/* Style pour l'image/logo principal de la page d'accueil */
+.image-acceuil {
+  display: block; /* Affichage en bloc pour centrage */
+  max-width: 400px; /* Largeur maximale de 400px */
+  width: 100%; /* Largeur responsive (s'adapte) */
+  height: auto; /* Hauteur automatique pour garder proportions */
+  margin: 2rem auto; /* Centré avec marges verticales de 2rem */
+  border-radius: 15px; /* Coins très arrondis */
+  box-shadow: 0 8px 25px rgb(255, 0, 0); /* Ombre rouge vive */
+  transition: transform 0.3s ease, box-shadow 0.3s ease, opacity 0.3s ease; /* Animations fluides */
+  opacity: 0.7; /* Transparence de base (70% visible) */
+}
+
+/* Effet au survol de l'image d'accueil */
+.image-acceuil:hover {
+  transform: scale(1.05); /* Agrandissement de 5% au survol */
+  box-shadow: 0 12px 30px rgb(250, 0, 0); /* Ombre plus grande et rouge vif */
+  opacity: 1; /* Devient complètement opaque au survol */
+}
+
+/* ===================================================================
+   FOOTER ET NAVIGATION SECONDAIRE
+   ================================================================== */
+
+/* Footer principal */
+footer {
+  background-color: #000; /* Fond noir comme le header */
+  border-top: 2px solid #8b0000; /* Bordure rouge en haut */
+  padding: 2rem 0; /* Espacement vertical */
+  margin-top: auto; /* Pousse le footer en bas */
+  box-shadow: 0 -2px 10px rgba(255, 0, 0, 0.3); /* Ombre rouge vers le haut */
+}
+
+/* Container du footer */
+.footer-content {
+  max-width: 1200px; /* Même largeur que le main */
+  margin: 0 auto; /* Centré */
+  padding: 0 2rem; /* Espacement horizontal */
+}
+
+/* Sections du footer */
+.footer-section {
+  margin-bottom: 1.5rem; /* Espacement entre sections */
+}
+
+/* Titres du footer */
+.footer-section h3 {
+  color: #ff6666; /* Rouge clair */
+  margin-bottom: 1rem; /* Marge en bas */
+  font-size: 1.2rem; /* Taille appropriée */
+  text-align: center; /* Centré */
+}
+
+/* Navigation du footer */
+.footer-nav {
+  text-align: center; /* Centré */
+  margin-bottom: 1.5rem; /* Marge en bas */
+}
+
+/* Copyright et informations légales */
+.footer-info {
+  text-align: center; /* Centré */
+  color: #999; /* Gris moyen */
+  font-size: 0.9rem; /* Plus petit */
+  border-top: 1px solid #333; /* Ligne de séparation */
+  padding-top: 1rem; /* Espacement au-dessus */
+}
+
+/* Liens du footer */
+.footer-info a {
+  color: #ff6666; /* Rouge clair */
+  text-decoration: none; /* Sans soulignement */
+}
+
+.footer-info a:hover {
+  color: #ff0000; /* Rouge vif au survol */
+  text-decoration: underline; /* Soulignement au survol */
+}
+
+/* ===================================================================
+   TEXTE ET PARAGRAPHES
+   ================================================================== */
+
+/* Style des paragraphes de contenu */
+p {
+  margin: 1.5rem 0; /* Marges verticales de 1.5rem */
+  text-align: justify; /* Texte justifié (aligné des deux côtés) */
+  font-size: 1.1rem; /* Taille de police légèrement plus grande */
+  background-color: #2a2a2a; /* Fond gris foncé */
+  padding: 1.5rem; /* Espacement interne */
+  border-radius: 10px; /* Coins arrondis */
+  border-left: 4px solid #ff0000; /* Bordure rouge à gauche (effet Death Note) */
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3); /* Ombre pour effet de profondeur */
+}
+
+/* ===================================================================
+   SECTIONS ET ARTICLES HTML5
+   ================================================================== */
+
+/* Styles pour les sections HTML5 */
+section {
+  margin: 2rem 0; /* Marges verticales */
+}
+
+/* Styles pour les articles */
+article {
+  background-color: #2a2a2a; /* Fond gris foncé */
+  padding: 1.5rem; /* Espacement interne */
+  border-radius: 10px; /* Coins arrondis */
+  margin: 1.5rem 0; /* Marges verticales */
+  border-left: 4px solid #8b0000; /* Bordure rouge foncé */
+}
+
+/* Sidebar/Aside */
+aside {
+  background-color: #1a1a1a; /* Fond plus foncé */
+  padding: 1.5rem; /* Espacement interne */
+  border-radius: 8px; /* Coins arrondis */
+  border: 2px solid #333; /* Bordure grise */
+  margin: 1rem 0; /* Marges verticales */
+}
+
+aside h3 {
+  color: #ff6666; /* Rouge clair pour les titres d'aside */
+  margin-bottom: 1rem; /* Marge en bas */
+}
+
+/* ===================================================================
+   NOUVEAUX STYLES POUR LES PAGES ENRICHIES
+   ================================================================== */
+
+/* SECTIONS ET ÉVÉNEMENTS */
+.realisation-section,
+.events-section,
+.video-section,
+.contact-intro {
+  margin: 2rem 0;
+  padding: 1.5rem;
+  background-color: #2a2a2a;
+  border-radius: 10px;
+  border-left: 4px solid #ff0000;
+}
+
+.realisation-section h2,
+.events-section h2,
+.video-section h2 {
+  color: #ff0000;
+  margin-bottom: 1rem;
+  font-size: 1.5rem;
+}
+
+/* ÉVÉNEMENTS */
+.event-item,
+.milestone-item,
+.news-item {
+  margin: 1rem 0;
+  padding: 1rem;
+  background-color: #1a1a1a;
+  border-radius: 8px;
+  border-left: 3px solid #8b0000;
+}
+
+.event-item.upcoming {
+  border-left-color: #00ff00;
+}
+
+.event-item.past {
+  border-left-color: #666;
+}
+
+.event-date,
+.news-date {
+  color: #ff6666;
+  font-weight: bold;
+  font-size: 0.9rem;
+}
+
+/* GALERIE PHOTOS */
+.photo-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 1.5rem;
+  margin: 2rem 0;
+}
+
+.photo-item,
+.photo-placeholder {
+  background-color: #2a2a2a;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 4px 15px rgba(255, 0, 0, 0.2);
+  transition: transform 0.3s ease;
+}
+
+.photo-item:hover,
+.photo-placeholder:hover {
+  transform: translateY(-5px);
+}
+
+.gallery-img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+}
+
+.photo-caption {
+  padding: 1rem;
+  text-align: center;
+  background-color: #1a1a1a;
+  margin: 0;
+}
+
+.placeholder-content {
+  padding: 2rem;
+  text-align: center;
+  color: #666;
+}
+
+.placeholder-content p:first-child {
+  font-size: 3rem;
+  margin-bottom: 1rem;
+}
+
+/* VIDÉOS */
+.video-item {
+  margin: 2rem 0;
+  padding: 1.5rem;
+  background-color: #2a2a2a;
+  border-radius: 10px;
+}
+
+.video-container {
+  margin: 1rem 0;
+  border-radius: 8px;
+  overflow: hidden;
+  position: relative;
+  width: 100%;
+  max-width: 800px;
+}
+
+.video-player {
+  width: 100%;
+  max-width: 800px;
+  height: auto;
+  border-radius: 8px;
+}
+
+/* Style pour vidéos YouTube intégrées */
+.youtube-video {
+  width: 100%;
+  height: 315px;
+  border-radius: 8px;
+}
+
+.video-description {
+  margin-top: 0.5rem;
+  font-style: italic;
+  color: #ccc;
+}
+
+/* FORMULAIRE DE CONTACT */
+.contact-form {
+  background-color: #2a2a2a;
+  padding: 2rem;
+  border-radius: 10px;
+  margin: 2rem 0;
+}
+
+.form-group {
+  margin-bottom: 1.5rem;
+}
+
+.form-group label {
+  display: block;
+  margin-bottom: 0.5rem;
+  color: #ff6666;
+  font-weight: bold;
+}
+
+.form-group input,
+.form-group select,
+.form-group textarea {
+  width: 100%;
+  padding: 0.8rem;
+  border: 2px solid #555;
+  border-radius: 5px;
+  background-color: #1a1a1a;
+  color: #e0e0e0;
+  font-size: 1rem;
+}
+
+.form-group input:focus,
+.form-group select:focus,
+.form-group textarea:focus {
+  border-color: #ff0000;
+  outline: none;
+  box-shadow: 0 0 5px rgba(255, 0, 0, 0.3);
+}
+
+.checkbox-group {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.checkbox-group input[type="checkbox"] {
+  width: auto;
+  margin-right: 0.5rem;
+}
+
+.form-actions {
+  display: flex;
+  gap: 1rem;
+  justify-content: center;
+  margin-top: 2rem;
+}
+
+.btn-submit,
+.btn-reset {
+  padding: 1rem 2rem;
+  border: none;
+  border-radius: 5px;
+  font-weight: bold;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.btn-submit {
+  background-color: #ff0000;
+  color: white;
+}
+
+.btn-submit:hover {
+  background-color: #cc0000;
+  transform: translateY(-2px);
+}
+
+.btn-reset {
+  background-color: #666;
+  color: white;
+}
+
+.btn-reset:hover {
+  background-color: #555;
+}
+
+/* LIENS EXTERNES ET SOCIAUX */
+.external-links,
+.social-links,
+.partner-links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  margin: 1rem 0;
+  justify-content: center;
+}
+
+.external-link,
+.social-link {
+  display: inline-block;
+  padding: 0.8rem 1.5rem;
+  background-color: #8b0000;
+  color: white;
+  text-decoration: none;
+  border-radius: 25px;
+  transition: all 0.3s ease;
+  font-weight: bold;
+}
+
+.external-link:hover,
+.social-link:hover {
+  background-color: #ff0000;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 8px rgba(255, 0, 0, 0.3);
+}
+
+/* MÉTHODES DE CONTACT */
+.contact-methods {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 2rem;
+  margin: 2rem 0;
+}
+
+.contact-method {
+  background-color: #2a2a2a;
+  padding: 1.5rem;
+  border-radius: 10px;
+  text-align: center;
+}
+
+/* FAQ */
+.faq-item {
+  margin: 1.5rem 0;
+  padding: 1.5rem;
+  background-color: #2a2a2a;
+  border-radius: 8px;
+  border-left: 3px solid #ff6666;
+}
+
+.faq-item h3 {
+  color: #ff6666;
+  margin-bottom: 0.5rem;
+}
+
+/* DISCLAIMER ET NOTES */
+.video-disclaimer,
+.gallery-info {
+  background-color: #333;
+  padding: 1.5rem;
+  border-radius: 8px;
+  margin: 2rem 0;
+  border: 2px solid #666;
+}
+
+/* ACTUALITÉS */
+.news-section {
+  margin: 3rem 0;
+  padding: 2rem;
+  background-color: #2a2a2a;
+  border-radius: 15px;
+  border: 2px solid #ff0000;
+}
+
+.news-section h2 {
+  color: #ff0000;
+  text-align: center;
+  margin-bottom: 1.5rem;
+}
+
+/* LIEN GITHUB SPÉCIAL */
+.github-link {
+  display: inline-block;
+  background: linear-gradient(45deg, #8b0000, #ff0000);
+  color: white;
+  padding: 1rem 2rem;
+  border-radius: 25px;
+  text-decoration: none;
+  font-weight: bold;
+  text-align: center;
+  margin: 1rem auto;
+  box-shadow: 0 4px 15px rgba(255, 0, 0, 0.3);
+  transition: all 0.3s ease;
+}
+
+.github-link:hover {
+  transform: translateY(-3px) scale(1.05);
+  box-shadow: 0 8px 25px rgba(255, 0, 0, 0.5);
+}
+
+.github-section {
+  text-align: center;
+  margin: 3rem 0;
+  padding: 2rem;
+  background-color: #2a2a2a;
+  border-radius: 15px;
+  border: 2px solid #333;
+}
+
+/* ===================================================================
+   DESIGN RESPONSIVE (ADAPTATION MOBILE ET TABLETTE)
+   ================================================================== */
+
+/* Styles pour écrans de moins de 768px (tablettes et mobiles) */
+@media (max-width: 768px) {
+  /* Titre header plus petit sur mobile */
+  header h1 {
+    font-size: 2rem; /* Taille réduite pour mobile */
+  }
+
+  /* Navigation verticale sur mobile */
+  nav ul {
+    flex-direction: column; /* Liens empilés verticalement */
+    gap: 1rem; /* Espacement réduit entre liens */
+  }
+
+  /* Contenu principal adapté mobile */
+  main {
+    padding: 1rem; /* Moins d'espacement sur mobile */
+  }
+
+  /* Image plus petite sur mobile */
+  .image-acceuil {
+    max-width: 300px; /* Largeur réduite sur mobile */
+  }
+
+  /* Texte adapté mobile */
+  p {
+    font-size: 1rem; /* Taille de police réduite */
+    padding: 1rem; /* Moins d'espacement interne */
+  }
+
+  /* Responsive pour nouveaux éléments */
+  .photo-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .external-links,
+  .social-links {
+    flex-direction: column;
+  }
+
+  .form-actions {
+    flex-direction: column;
+  }
+
+  .contact-methods {
+    grid-template-columns: 1fr;
+  }
+
+  /* Responsive pour vidéos YouTube */
+  .youtube-video {
+    height: 200px;
+  }
+
+  /* Footer responsive */
+  .footer-content {
+    padding: 0 1rem;
+  }
+}
+
+/* ===================================================================
+   FIN DU FICHIER CSS - DEATH NOTE FANSITE
+   ================================================================== */

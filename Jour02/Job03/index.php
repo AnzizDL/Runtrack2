@@ -1,5 +1,5 @@
 <?php
-for ($i = 0; $i <= 100; $i++) {
+  for ($i = 0; $i <= 100; $i++) {
     if ($i == 42) {
         echo 'La Plateforme_<br />';
         continue;

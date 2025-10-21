@@ -19,13 +19,13 @@ function maison_ascii($w, $h) {
 $out = "";
 $row = 0;
 while ($row < $h) {
-$espaces = ($h - 1) - $row;
-$milieu = ($row * 2) + 1;
+$espaces = ($h - 1) - $row; 
+$milieu = ($row * 2) + 1; 
 $i = 0; $line = "";
 while ($i < $espaces) { $line = $line . " "; $i = $i + 1; }
-$line = $line . "/";
+$line = $line . "/"; 
 $i = 0; while ($i < $milieu) { $line = $line . "^"; $i = $i + 1; }
-$line = $line . "\\";
+$line = $line . "\\"; 
 $out = $out . $line . "\n";
 $row = $row + 1;
 }

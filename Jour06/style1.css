@@ -1,0 +1,99 @@
+/* STYLE 1 - BLEU MODERNE */
+
+body {
+    font-family: 'Arial', sans-serif;
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    margin: 0;
+    padding: 20px;
+    min-height: 100vh;
+    color: #333;
+}
+
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    background: rgba(255, 255, 255, 0.95);
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+}
+
+h1 {
+    color: #4a5568;
+    text-align: center;
+    font-size: 2.5em;
+    margin-bottom: 30px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+h2 {
+    color: #2d3748;
+    border-bottom: 3px solid #667eea;
+    padding-bottom: 10px;
+}
+
+.style-form {
+    background: #f7fafc;
+    padding: 25px;
+    border-radius: 10px;
+    border: 2px solid #667eea;
+    margin-bottom: 30px;
+}
+
+label {
+    font-weight: bold;
+    color: #2d3748;
+    display: block;
+    margin-bottom: 10px;
+    font-size: 1.1em;
+}
+
+.style-select {
+    width: 100%;
+    padding: 12px 15px;
+    border: 2px solid #a0aec0;
+    border-radius: 8px;
+    font-size: 1em;
+    background: white;
+    margin-bottom: 20px;
+    transition: border-color 0.3s ease;
+}
+
+.style-select:focus {
+    outline: none;
+    border-color: #667eea;
+    box-shadow: 0 0 0 3px rgba(102, 126, 234, 0.1);
+}
+
+.submit-btn {
+    background: linear-gradient(45deg, #667eea, #764ba2);
+    color: white;
+    border: none;
+    padding: 12px 30px;
+    border-radius: 25px;
+    font-size: 1.1em;
+    font-weight: bold;
+    cursor: pointer;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.submit-btn:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 5px 15px rgba(102, 126, 234, 0.4);
+}
+
+.demo-content {
+    background: #edf2f7;
+    padding: 25px;
+    border-radius: 10px;
+    border-left: 5px solid #667eea;
+}
+
+.demo-box {
+    background: white;
+    padding: 20px;
+    border-radius: 8px;
+    margin-top: 15px;
+    border: 1px solid #e2e8f0;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}

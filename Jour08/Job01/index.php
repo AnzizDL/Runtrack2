@@ -17,3 +17,4 @@ echo $_SESSION['nbvisites'];
 <form method="post">
     <button name="reset">reset</button>
 </form>
+
